@@ -1,0 +1,9 @@
+# Static site (index.html) + serverless function (netlify/functions/hue.js).
+# The function registers itself at /api/hue via `export const config` (v2).
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
